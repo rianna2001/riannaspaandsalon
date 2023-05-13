@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beauty</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+* {box-sizing: border-box}
+body {
+  background-color: navajowhite;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #F97B22;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color:yellowgreen;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: darkred;
+  padding: 5px;
+}
+.centered {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 25px;
+  color: black;
+  background-color: orange;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+}
+
+</style>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="#home" >Home</a>
+  <a href="#aboutus">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn" class="active">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#"class="active">Beauty</a>
+      <a href="#">Haircare</a>
+      <a href="#">Skincare</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+  <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="makeup.html">Makeup</a>
+      <a href="spa.html">Spa</a>
+      <a href="salon1.html">Salon</a>
+    </div>
+  </div>
+  <div class="topnav">
+      <a href="contact1.html">Contact Us</a>
+
+    
+    
+          <img src="https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=" style="width:6%; float: right;">
+           <div class="topnav">
+        <a href="CART.html" style="float: right;">My Cart</a>
+
+</div>
+</div>
+</div>
+<div class="container">
+     <img src="Images/beautybanner.png" alt="banner" style="width:100%; height: 100%;">
+
+</div> 
+</div>
+<br>
+<br>
+<br>
+<h3><b><u> Beauty Products</u></b></h3>
+<div class="column">
+<div class="card">
+  <img src="Images/makeup1.jpg" alt="powder" style="width: 100%">
+  <h3>Sacha Buttercup Powder</h3>
+  <p class="Price">$69.99 TT</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/liquid-velvet-face-canvas.jpg" alt="facespray" style="width: 100%">
+  <h3>Sacha Liquid Face Cancvas</h3>
+  <p class="Price">$50.99 TT</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/blush-palette.jpg" alt="Blush" style="width:100%">
+  <h3>Sacha BLush Palette</h3>
+  <p class="Price">$80.00 TT</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/matte-lipstick.jpg" alt="lipstick" style="width:100%">
+  <h3>Sacha Matte Lipstick</h3>
+  <p class="Price">$49.99 TT</p>
+  <p>Bold and Beautiful Lips.Available in a Variety of Colours.Perfect for All Sepcial Occassions</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/fenty eye.jpg" alt="Mascara" style="width:86%">
+  <h3>Fenty Curl Mascara</h3>
+  <p class="Price">$90.00 TT</p>
+  <p>Available in Black,Blue and Purple. Add Volume, Lift and Curl to your Eyelashes.Waterproof and Lightweight Formula.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/wetblush.jpg" alt="Wet n Wild Blush" style="width:90%">
+  <h3>Wet n Wild Color Icon Blush Powder</h3>
+  <p class="Price">$50.00 TT</p>
+  <p>Hydrating, Radiance, Antioxidant, Softening, Brightening.Perfect for all skin types.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+
+
+<div class="column">
+<div class="card">
+  <img src="Images/fentylip.jpg" alt="Lipgloss" style="width:88%">
+  <h3>Fenty Beauty Lip Gloss Bomb</h3>
+  <p class="Price">$90.00 TT</p>
+  <p>Formulated not only to Shine your lips but also Nourish them. Infused with Essential Oils.Available in Different Colours and Flavors</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/makeupfenty.jpg."alt="Foundation" style="width:100%">
+  <h3>Fenty Liquid Foundation</h3>
+  <p class="Price">$150.00 TT</p>
+  <p>Pro-Coverage with Matte-Finished.Available in Different Shades for All Skin Tones and Types.Speacially Formulated with Skin Benifits </p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/fentypowder.jpg."alt="fenty powder" style="width:95%">
+  <h3>Fenty Beauty Pro Filt'r Soft Matte Powder </h3>
+  <p class="Price">$70.00 TT</p>
+  <p>This face powder is the perfect finishing touch to your makeup look. Full Coverage with a Matte-Finished.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+
+</body>
+</html>
+
